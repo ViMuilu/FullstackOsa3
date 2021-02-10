@@ -7,6 +7,7 @@ const cors = require('cors')
 app.use(express.json())
 app.use(morgan('tiny'))
 app.use(cors())
+app.use(express.static('build'))
 let persons = [
     {
         "name": "Arto Hellas",
@@ -38,7 +39,7 @@ app.get('/api/persons', (req, res) => {
 })
 app.get('/info', (req, res) => {
 
-    res.send(`<p>Phondebook has numbers of ${persons.length} people</p>
+    res.send(`<p>Phondebook has ${persons.length} people</p>
      <p> ${new Date()}</p>`
     )
 
