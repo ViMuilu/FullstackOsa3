@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+// note send request twice to test for duplicates if there is no user named test
+{
+    "name": "test",
+    "number": "123"
+}
