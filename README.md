@@ -1,3 +1,3 @@
 # FullstackOsa3
 
-(Heroku)[https://fullstackharjotus.herokuapp.com/]
+[Heroku](https://fullstackharjotus.herokuapp.com/)
